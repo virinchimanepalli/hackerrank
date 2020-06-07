@@ -40,10 +40,8 @@ def jumpingOnClouds(c):
     n = len(c) -1
     while True:
         if i >= n:
-            # print(count)
             return count
-            # break
-            # return count
+            
         if i+2 > n:
             count +=1
             return count
