@@ -1,22 +1,25 @@
 # Arrays: Left Rotation
 #vscode solution
-ar = [41 ,73, 89, 7, 10, 1, 59, 58, 84, 77, 77, 97,  58, 1, 86, 58, 26, 10, 86, 51]
-l_index = len(ar) -1
-ln = len(ar)
-k = []
-d = 10 #where d is number of rotations
-dl = ln - d
-lnth = ln - dl
-print(lnth)
-for i in range(d,ln):
-    k.append(ar[i])
+ar = [1,2,3,4,5]
+def leftRotation(ar,d,ln):
+    l_index = ln -1
+    # ln = len(ar)
+    k = []
+    # d = 4 #where d is number of rotations
+    dl = ln - d
+    lnth = ln - dl
+    # print(lnth)
+    for i in range(d,ln):
+        k.append(ar[i])
 
-for i in range(lnth):
-    k.append(ar[i])
-listToStr = ''.join(map(str, k))
-print(k)
-print(listToStr)
-
+    for i in range(lnth):
+        k.append(ar[i])
+    listToStr = ' '.join(map(str, k))
+    # print(k)
+    return listToStr
+d = int(input("enter number of rotations " ))
+ln =  len(ar)
+print(leftRotation(ar,d,ln))
 #hackerrank
 #!/bin/python3
 
